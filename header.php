@@ -18,20 +18,14 @@
           <i class="fas fa-bars"></i>
         </button>
       </div>
+
       <!-- nav-links -->
-      <ul class="nav-links">
-        <li>
-          <a href="<?php echo site_url('/projects')?>">projects</a>
-        </li>
-        <li>
-          <a href="<?php echo site_url('/about')?>">about</a>
-        </li>
-        
-        <li>
-          <a href="<?php echo site_url('/blog')?>">blog</a>
-        </li>
-        
+     <ul class="nav-links">
+        <li><a class="active" href="<?php echo site_url('/projects')?>">projects</a></li>
+        <li><a href="<?php echo site_url('/about')?>">about</a></li>
+        <li><a href="<?php echo site_url('/blog')?>">blog</a></li>       
       </ul>
+
     </div>
   </nav>
   <!-- end of navbar -->
@@ -43,14 +37,9 @@
       </button>
       <!-- nav-links -->
       <ul class="sidebar-links">
-          <a href="<?php echo site_url('/about')?>">About</a>
-        </li>
-        <li>
-          <a href="<?php echo site_url('/projects')?>">Projects</a>
-        </li>
-        <li>
-          <a href="<?php echo site_url('/blog')?>">Blog</a>
-        </li>
+        <li><a href="<?php echo site_url('/about')?>">About</a></li>
+        <li><a href="<?php echo site_url('/projects')?>">Projects</a></li>
+        <li><a href="<?php echo site_url('/blog')?>">Blog</a></li>
       </ul>
       <!-- social icons -->
       <ul class="social-icons ">

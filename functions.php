@@ -14,12 +14,14 @@
 
     wp_enqueue_style( 'wpportfolio-reset', get_stylesheet_directory_uri().'/style.css',array(),'1.0.1', 'all');
     wp_enqueue_style( 'wpportfolio-style', WPO_INCLUDES.'css/style.css)', array( 'wpportfolio-reset' ), WPO_VERSION, 'all');
+    
     }
     
     add_action('wp_enqueue_scripts', 'portfolio_files');
 
     // add title in the uri
     function portfolio_features() {
+        register_nav_menu('headerMenu', 'Header Menu');
         add_theme_support('title-tag');
     } 
     add_action('after_setup_theme', 'portfolio_features');
