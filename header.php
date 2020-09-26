@@ -12,7 +12,7 @@
       <div class="nav-header">
         <!--<img src="./images/logo.svg" class="nav-logo" alt="nav logo" />-->
       
-          <a href="index.html">Guffi Andrea</a>
+          <a href="<?php echo site_url('/')?>">Guffi Andrea</a>
         
         <button class="nav-btn" id="nav-btn">
           <i class="fas fa-bars"></i>
@@ -21,14 +21,14 @@
       <!-- nav-links -->
       <ul class="nav-links">
         <li>
-          <a href="projects.html">projects</a>
+          <a href="<?php echo site_url('/projects')?>">projects</a>
         </li>
         <li>
-          <a href="about.html">about</a>
+          <a href="<?php echo site_url('/about')?>">about</a>
         </li>
         
         <li>
-          <a href="blog.html">blog</a>
+          <a href="<?php echo site_url('/blog')?>">blog</a>
         </li>
         
       </ul>
@@ -43,13 +43,13 @@
       </button>
       <!-- nav-links -->
       <ul class="sidebar-links">
-          <a href="about.html">About</a>
+          <a href="<?php echo site_url('/about')?>">About</a>
         </li>
         <li>
-          <a href="projects.html">Projects</a>
+          <a href="<?php echo site_url('/projects')?>">Projects</a>
         </li>
         <li>
-          <a href="blog.html">Blog</a>
+          <a href="<?php echo site_url('/blog')?>">Blog</a>
         </li>
       </ul>
       <!-- social icons -->
@@ -65,7 +65,7 @@
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/andrea_wanderlust92/" class="social-icon mobile">
+          <a href="https://www.instagram.com/andrea.guffi/" class="social-icon mobile">
             <i class="fab fa-instagram"></i>
           </a>
         </li>

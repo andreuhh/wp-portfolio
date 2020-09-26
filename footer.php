@@ -15,7 +15,7 @@
         </a>
       </li>
       <li>
-        <a href="https://www.instagram.com/andrea_wanderlust92/" class="social-icon">
+        <a href="https://www.instagram.com/andrea.guffi/" class="social-icon">
           <i class="fab fa-instagram"></i>
         </a>
       </li>

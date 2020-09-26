@@ -17,3 +17,9 @@
     }
     
     add_action('wp_enqueue_scripts', 'portfolio_files');
+
+    // add title in the uri
+    function portfolio_features() {
+        add_theme_support('title-tag');
+    } 
+    add_action('after_setup_theme', 'portfolio_features');
