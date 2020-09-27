@@ -12,8 +12,8 @@
      wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
      
 
-    wp_enqueue_style( 'wpportfolio-reset', get_stylesheet_directory_uri().'/style.css',array(),'1.0.1', 'all');
-    wp_enqueue_style( 'wpportfolio-style', WPO_INCLUDES.'css/style.css)', array( 'wpportfolio-reset' ), WPO_VERSION, 'all');
+     wp_enqueue_style( 'wpportfolio-reset', get_stylesheet_directory_uri().'/style.css',array(),'1.0.1', 'all');
+     wp_enqueue_style( 'wpportfolio-style', WPO_INCLUDES.'css/style.css)', array( 'wpportfolio-reset' ), WPO_VERSION, 'all');
     
     }
     

@@ -21,9 +21,16 @@
 
       <!-- nav-links -->
      <ul class="nav-links">
-        <li><a class="active" href="<?php echo site_url('/projects')?>">projects</a></li>
-        <li><a href="<?php echo site_url('/about')?>">about</a></li>
-        <li><a href="<?php echo site_url('/blog')?>">blog</a></li>       
+        <li >
+          <a <?php if(is_page('projects')) echo'class="active"'?> href="<?php echo site_url('/projects')?>">projects</a>
+        </li>
+
+        <li>
+          <a <?php if(is_page('about')) echo'class="active"'?> href="<?php echo site_url('/about')?>">about</a>
+        </li>
+        <li>
+          <a <?php if(is_page('blog')) echo'class="active"'?> href="<?php echo site_url('/blog')?>">blog</a>
+        </li>       
       </ul>
 
     </div>
