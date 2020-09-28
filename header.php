@@ -29,7 +29,7 @@
           <a <?php if(is_page('about')) echo'class="active"'?> href="<?php echo site_url('/about')?>">about</a>
         </li>
         <li>
-          <a <?php if(is_page('blog')) echo'class="active"'?> href="<?php echo site_url('/blog')?>">blog</a>
+          <a <?php if(get_post_type() == 'post')echo'class="active"' ?>  href="<?php echo site_url('/blog')?>">blog</a>
         </li>       
       </ul>
 
