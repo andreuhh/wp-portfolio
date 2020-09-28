@@ -20,6 +20,10 @@
         <p><?php the_content(); ?></p>
       </article>
     </div>
+
+    <div class="btn-cont">
+      <a href="projects.html" class="bottone">Visit website</a>
+    </div>
     
   </section>
     <?php }

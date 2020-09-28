@@ -66,16 +66,29 @@
   <!-- prog overview -->
   <main class="proj-overview">
     <h2>Latest projects</h2>
-    <section class="proj-container">
+    
+    <?php 
+      $homepageProjects = new WP_Query(array(
+        'posts_per_page' => 2,
+        'post_type' => 'projects'
+      ));
+
+      while($homepageProjects->have_posts()) {
+        $homepageProjects->the_post(); ?>
+      <section class="proj-container">
       <div class="proj-img">
         <img src="<?php echo get_theme_file_uri('/images/acme.jpg')?>;" alt="" width="100%" height="auto">
       </div>
       <div class="proj-text">
-        <h3>Acme Company</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae aspernatur, officiis officia laudantium tempora cupiditate placeat omnis velit nulla quisquam a fuga ex totam molestias earum ratione odio. Perspiciatis, facilis.</p>
-        <a href="single-project.html" class="btn-small">View project</a>
+        <h3><?php the_title(); ?></h3>
+        <p><?php echo wp_trim_words(get_the_content(),20)?></p>
+        <a href="<?php the_permalink(); ?>" class="btn-small">View project</a>
       </div>
     </section>
+        <?php }
+    ?>
+
+    
 
     <section class="proj-container">
       <div id="item1" class="proj-text align-left">

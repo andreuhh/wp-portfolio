@@ -22,7 +22,7 @@
       <!-- nav-links -->
      <ul class="nav-links">
         <li >
-          <a <?php if(is_page('projects')) echo'class="active"'?> href="<?php echo site_url('/projects')?>">projects</a>
+          <a <?php if(is_page('project')) echo'class="active"'?> href="<?php echo site_url('/project')?>">projects</a>
         </li>
 
         <li>
