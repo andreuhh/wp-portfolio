@@ -3,7 +3,7 @@
     define( 'WPO_VERSION', ( WPO_IS_STAGING ? time() : '1.0.0' ) );
     define( 'WPO_IS_ADMIN', current_user_can( 'edit_others_posts' ) );
 
-    
+
 /**
  * This function takes care of all the setup and functionalities that should be added to your theme
  */
@@ -37,8 +37,7 @@ add_action( 'after_setup_theme', 'wpo_setup' );
      
 
      wp_enqueue_style( 'wpportfolio-reset', get_stylesheet_directory_uri().'/style.css',array(), WPO_VERSION, 'all');
-     wp_enqueue_style( 'wpportfolio-style', WPO_INCLUDES.'css/style.css)', array( 'wpportfolio-reset' ), WPO_VERSION, 'all');
-    
+     wp_enqueue_style( 'wpportfolio-style', WPO_INCLUDES.'css/style.css)', array( 'wpportfolio-reset' ), WPO_VERSION, 'all');   
     }
     
     add_action('wp_enqueue_scripts', 'portfolio_files');
