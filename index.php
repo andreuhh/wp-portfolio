@@ -34,9 +34,7 @@
             </p>
             <div class="card-footer">
               <p><?php the_time('M Y'); ?></p>
-              <a href="https://acme-mohole.netlify.app/">
-                <p>#tag article</p>
-              </a>
+              <a><p><?php echo get_the_category_list(', ')?></p></a>
             </div>
           </div>
         </div>
@@ -46,5 +44,7 @@
     ?>
     </div>
   </section>
+
+  <p class="page-num"><?php echo paginate_links(); ?></p>
   
  <?php get_footer();?>

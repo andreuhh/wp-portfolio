@@ -13,8 +13,8 @@
         </div>
         <img src="images/navigli1.jpg" alt="" width="80%" height="30%">
         <div class="info-project">
-          <p>data</p>
-          <p>Category</p>
+          <p><?php the_time('N M Y'); ?></p>
+          <p><?php echo get_the_category_list(', ')?></p>
           <p>#Tag</p>
         </div>
         <p><?php the_content(); ?></p>

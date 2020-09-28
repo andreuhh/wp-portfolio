@@ -53,6 +53,7 @@ Variables
     list-style-type: none;
   }
   a {
+    color: var(--dark-background);
     text-decoration: none;
   }
   img:not(.nav-logo) {
@@ -739,8 +740,8 @@ Variables
     object-fit: cover;
   }
   .card-footer {
-    display: grid;
-    grid-template-columns: auto 1fr;
+    display: flex;
+    justify-content: space-between;
     -webkit-box-align: center;
     align-items: center;
   }
@@ -756,6 +757,16 @@ Variables
     justify-self: end;
     color: var(--clr-primary-5);
     font-size: 0.85rem;
+  }
+
+  /*next page num in the blog page*/
+  p.page-num{
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+  a.page-numbers{
+    color: #fff;
   }
   
   /*
