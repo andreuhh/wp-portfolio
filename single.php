@@ -3,8 +3,28 @@
 
     while(have_posts()) {
         the_post(); ?>
-        <h2><?php the_title();?></h2>
-        <?php the_content(); ?>
+         <!-- about -->
+  <section class="section about single-project">
+    <div class="section-center about-center">
+      <article class="about-info">
+         <!-- section title -->
+         <div class="section-title about-title">
+          <h2 class="project-title"><?php the_title(); ?></h2> 
+        </div>
+        <img src="images/navigli1.jpg" alt="" width="80%" height="30%">
+        <div class="info-project">
+          <p>data</p>
+          <p>Category</p>
+          <p>#Tag</p>
+        </div>
+        <p><?php the_content(); ?></p>
+          
+
+        
+      </article>
+    </div>
+    
+  </section>
     <?php }
 
     get_footer();

@@ -25,7 +25,12 @@
             <h4><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h4>
           </a>
             <p>
-              <?php the_excerpt(); ?>
+            <?php if(has_excerpt()){
+            echo get_the_excerpt();
+        } else {
+            echo wp_trim_words(get_the_content(), 20);
+          }?>
+          <a href="<?php the_permalink(); ?>" class="nu gray">Read more</a>
             </p>
             <div class="card-footer">
               <p><?php the_time('M Y'); ?></p>
