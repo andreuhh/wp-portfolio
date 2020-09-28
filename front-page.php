@@ -56,7 +56,7 @@
           suo lato misterioso, amo risolvere problemi e amo le persone.
         </p>
 
-        <p>Find out more <a href="about.html">about me</a></p>
+        <p>Find out more <a href="<?php echo site_url('/about')?>">about me</a></p>
 
       </article>
     </div>
@@ -99,7 +99,7 @@
       </div>
     </section>
      
-    <a id="btn-no-mobile" href="projects.html" class="bottone">Show All</a>
+    <a id="btn-no-mobile" href="<?php echo site_url('/projects')?>" class="bottone">Show All</a>
   </main>  
 
 <?php get_footer();?>

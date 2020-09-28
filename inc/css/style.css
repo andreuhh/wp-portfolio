@@ -5,7 +5,7 @@ Variables
 */
 
 :root {
-    --dark-background: #2f2f2f;
+    --dark-background: #181717;
     --my-gray-1: #E5E5E5;
     --my-hover: #2aa3db;
     --my-hover: #d64646;
@@ -89,7 +89,7 @@ Variables
   }
   @media screen and (min-width: 800px) {
     h1 {
-      font-size: 4rem;
+      font-size: 5rem;
     }
     h2 {
       font-size: 3.2rem;
@@ -117,8 +117,7 @@ Variables
     font-size: 1rem;
     border: 2px solid var(--my-gray-1);
     cursor: pointer;
-    /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);*/
-    
+    /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);*/ 
   }
   /*
   .btn:hover {

@@ -2,13 +2,12 @@
 
 <!-- header -->
 <header class="hero">
-    <div class="section-center titolo">
-      <article class="hero-info">
-        <h1>Blog</h1>       
-      </article> 
+    
+  <div class="section-title">
+      <h1 class="dark-title">Blog</h1>
     </div>
   </header>
-  <!-- end of header -->
+<!-- end of header -->
 
   <section class="section blog">
     <div class="section-center blog-center">
