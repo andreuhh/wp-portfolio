@@ -1,15 +1,14 @@
 <?php get_header(); ?>
 
-<!-- header -->
 <header class="hero">
-    
-  <div class="section-title">
-      <h1 class="dark-title">Projects</h1>
-      <!-- the text of the description is in Post/Categories -->
-      <p><?php the_archive_description(); ?></p>
+    <div class="section-center titolo">
+      <article class="hero-info">
+        <h1>A small selection of my <br>
+          projects, enjoy !</h1>       
+      </article> 
     </div>
   </header>
-<!-- end of header -->
+  <!-- end of header -->
 
 <main class="proj-overview">
     <?php  
