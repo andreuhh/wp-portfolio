@@ -69,7 +69,7 @@
     
     <?php 
       $homepageProjects = new WP_Query(array(
-        'posts_per_page' => 2,
+        'posts_per_page' => 3,
         'post_type' => 'projects'
       ));
 
@@ -89,7 +89,7 @@
     ?>
 
     
-
+<!--  Hardcoded element
     <section class="proj-container">
       <div id="item1" class="proj-text align-left">
         <h3>Casa Blu</h3>
@@ -114,5 +114,7 @@
      
     <a id="btn-no-mobile" href="<?php echo site_url('/projects')?>" class="bottone">Show All</a>
   </main>  
+
+  -->
 
 <?php get_footer();?>
