@@ -11,7 +11,7 @@
          <div class="section-title about-title">
           <h2 class="project-title"><?php the_title(); ?></h2> 
         </div>
-        <img src="images/navigli1.jpg" alt="" width="80%" height="30%">
+        <img src="<?php the_field('project_image'); ?>" alt="" width="80%" height="30%">
         <div class="info-project">
           <p><?php the_time('N M Y'); ?></p>
           <p><?php echo get_the_category_list(', ')?></p>
@@ -22,7 +22,7 @@
     </div>
 
     <div class="btn-cont">
-      <a href="projects.html" class="bottone">Visit website</a>
+      <a href="<?php the_field('project_website_link'); ?>" class="bottone">Visit website</a>
     </div>
     
   </section>

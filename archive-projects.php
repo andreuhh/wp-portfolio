@@ -18,7 +18,7 @@
      
       <section class="proj-container">
       <div class="proj-img">
-        <img src="<?php echo get_theme_file_uri('/images/acme.jpg')?>;" alt="" width="100%" height="auto">
+        <img src="<?php the_field('project_image'); ?>;" alt="" width="100%" height="auto">
       </div>
       <div class="proj-text">
         <h3><?php the_title(); ?></h3>

@@ -21,7 +21,7 @@
       <div class="card">
         <!-- front of the card -->
         <div class="card-side card-front">
-          <img src="./images/foto3.jpg" alt="" />
+          <img src="<?php the_field('blog_image'); ?>" alt="" />
           <div class="card-info">
           <a href="single-article.html">
             <h4><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h4>
