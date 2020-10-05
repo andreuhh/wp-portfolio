@@ -16,8 +16,8 @@ function wpo_setup() {
 	 */
     add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'title-tag' );
-	add_theme_support( 'wp-block-styles' );
-	add_theme_support( 'align-wide' );
+	add_theme_support( 'wp-block-styles' ); /** carica stili dei blocchi di default */
+	add_theme_support( 'align-wide' ); /* allineamento a dx di Gutemberg */
 	add_theme_support( 'responsive-embeds' ); /** video responsive */
 
 }
@@ -39,7 +39,6 @@ add_action( 'after_setup_theme', 'wpo_setup' );
      wp_enqueue_style( 'wpportfolio-reset', get_stylesheet_directory_uri().'/style.css',array(), WPO_VERSION, 'all');
      wp_enqueue_style( 'wpportfolio-style', WPO_INCLUDES.'css/style.css)', array( 'wpportfolio-reset' ), WPO_VERSION, 'all');   
     }
-    
     add_action('wp_enqueue_scripts', 'portfolio_files');
 
     // add title in the uri
