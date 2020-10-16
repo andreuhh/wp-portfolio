@@ -24,12 +24,12 @@ function wpo_setup() {
 add_action( 'after_setup_theme', 'wpo_setup' );
 
     function portfolio_files() {
-     wp_enqueue_script('wpportfolio_js', get_theme_file_uri('/js/app.js'), NULL, '1.0', true);
-     wp_enqueue_style('wpportfolio_main_styles', get_stylesheet_uri());
+    wp_enqueue_script( 'wpportfolio_js', get_theme_file_uri('/inc/js/app.js'), NULL, '1.0', true);
+    wp_enqueue_style('wpportfolio_main_styles', get_stylesheet_uri());
 
      //animejs
-     //wp_enqueue_script('anime_js', 'https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js');
-     //wp_enqueue_script('wpportlio_animation_js', get_theme_file_uri('/js/main.js'), NULL, '1.0', true);
+     wp_enqueue_script('anime_js', 'https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js');
+     wp_enqueue_script('wpportlio_animation_js', get_theme_file_uri('/inc/js/main.js'), NULL, '1.0', false);
     
      wp_enqueue_style('font-secondary', 'https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
      wp_enqueue_style('font-primary', 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
